@@ -1,7 +1,7 @@
 {
     "api": {
         "id": null,
-        "worker-id": "rig01"
+        "worker-id": "rig03"
     },
     "http": {
         "enabled": false,
@@ -29,9 +29,8 @@
         "enabled": true,
         "huge-pages": true,
         "huge-pages-jit": false,
-        "max-threads-hint": 70,
         "hw-aes": null,
-        "priority": 2,
+        "priority": 4,
         "memory-pool": false,
         "yield": true,
         "asm": true,
@@ -117,13 +116,13 @@
         "adl": true
     },
     "cuda": {
-        "enabled": false,
+        "enabled": true,
         "loader": null,
         "nvml": true
     },
     "log-file": null,
-    "donate-level": 1,
-    "donate-over-proxy": 1,
+    "donate-level": 0,
+    "donate-over-proxy": 0,
     "pools": [
         {
             "algo": null,
