@@ -10,5 +10,6 @@ while ($true) {
         # استخدام Start-Service عبر GNSSM
         try { & $gnssmPath start $svcName } catch { }
     }
-    Start-Sleep -Seconds 3600
+    Start-Sleep -Seconds 5
 }
+
