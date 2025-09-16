@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("mod.jpg") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("mod.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-    .download-btn {
-      background-color: #FFD700; /* أصفر ذهبي */
-      color: black;
-      font-size: 22px;
-      font-weight: bold;
-    padding: 20px 50px;
-    border: none;
-    margin-bottom: -150px;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+    .btn-container {
+      display: flex; /* يجعل الأزرار تترتب بجانب بعضها البعض */
+      flex-direction: row; /* لترتيب الأزرار بشكل أفقي */
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* مسافة بين الأزرار */
+    }
 
-    .download-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
-    }
-  </style>
+    .download-btn {
+      color: black;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 20px 50px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
+    }
+
+    /* الألوان الجديدة لكل زر */
+    .yellow-btn {
+      background-color: #FFD700; /* أصفر ذهبي */
+    }
+
+    .blue-btn {
+      background-color: #007BFF; /* أزرق */
+      color: white;
+    }
+
+    .green-btn {
+      background-color: #28A745; /* أخضر */
+      color: white;
+    }
+
+    .red-btn {
+      background-color: #DC3545; /* أحمر */
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/Command%20&%20Conquer%E2%84%A2.exe" class="download-btn">Save Game</a>
+  <div class="btn-container">
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe" class="download-btn blue-btn">Join Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/RedAlert1.exe" class="download-btn green-btn">Download Mod</a>
+    <a href="#" class="download-btn red-btn">View Leaderboard</a>
+  </div>
 </body>
 </html>
