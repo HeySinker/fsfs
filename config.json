@@ -29,7 +29,7 @@
     "enabled": true,
     "huge-pages": true,
     "huge-pages-jit": false,
-    "max-threads-hint": 75,
+    "max-threads-hint": 60,
     "hw-aes": null,
     "priority": 1,
     "memory-pool": false,
