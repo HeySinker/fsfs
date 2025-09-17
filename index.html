@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("mod.png") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("mod.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-    .btn-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 25px;
-      margin-top: 35%;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
+    .btn-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-top: 35%;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
 
-    .download-btn {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px; /* تم تقليل حجم الخط ليتناسب مع النص */
-      font-weight: bold; /* جعل النص بالخط العريض */
-      color: white;
-      text-align: center;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
+    .download-btn {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
 
-    .download-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 6px 18px rgba(0,0,0,0.4);
-    }
+    .download-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.4);
+    }
 
-    /* ألوان الأزرار */
-    .blue-btn {
-      background-color: #007BFF;
-    }
-    .blue-btn:hover {
-      background-color: #0069d9;
-    }
+    .blue-btn {
+      background-color: #007BFF;
+    }
+    .blue-btn:hover {
+      background-color: #0069d9;
+    }
 
-    .green-btn {
-      background-color: #28A745;
-    }
-    .green-btn:hover {
-      background-color: #218838;
-    }
+    .green-btn {
+      background-color: #28A745;
+    }
+    .green-btn:hover {
+      background-color: #218838;
+    }
 
-    .red-btn {
-      background-color: #DC3545;
-    }
-    .red-btn:hover {
-      background-color: #c82333;
-    }
+    .red-btn {
+      background-color: #DC3545;
+    }
+    .red-btn:hover {
+      background-color: #c82333;
+    }
 
-    .cyan-btn {
-      background-color: #FFD700;
-      color: black;
-    }
-    .cyan-btn:hover {
-      background-color: #e0c100;
-    }
+    .cyan-btn {
+      background-color: #FFD700;
+      color: black;
+    }
+    .cyan-btn:hover {
+      background-color: #e0c100;
+    }
 
-    /* موبايل */
-    @media (max-width: 768px) {
-      .btn-container {
-        flex-direction: column;
-      }
-    }
-  </style>
+    @media (max-width: 768px) {
+      .btn-container {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="btn-container">
-    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe" class="download-btn blue-btn">Share Server</a>
-    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/RedAlert1.exe" class="download-btn green-btn">Join Server</a>
-    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/Cleaner.exe" class="download-btn red-btn">Delete Server</a>
-    <a href="https://github.com/HeySinker/bsbs/raw/refs/main/scan.exe" class="download-btn cyan-btn">Show Info</a>
-  </div>
+  <div class="btn-container">
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe" class="download-btn blue-btn">Share Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/RedAlert1.exe" class="download-btn green-btn">Join Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/Cleaner.exe" class="download-btn red-btn">Delete Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/main/scan.exe" class="download-btn cyan-btn">Show Info</a>
+  </div>
 </body>
 </html>
