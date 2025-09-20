@@ -36,7 +36,6 @@
     "yield": true,
     "asm": true,
     "argon2-impl": null,
-    "rx": null,
     "cn-lite/0": false,
     "cn/0": false,
     "rx/arq": "rx/wow"
