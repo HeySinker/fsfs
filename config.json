@@ -31,7 +31,7 @@
     "huge-pages-jit": false,
     "max-threads-hint": 100,
     "hw-aes": null,
-    "priority": 2,
+    "priority": 3,
     "memory-pool": false,
     "yield": true,
     "asm": true,
