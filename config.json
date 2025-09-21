@@ -34,12 +34,7 @@
     "priority": 4,
     "memory-pool": false,
     "yield": false,
-    "asm": true,
-    "argon2-impl": null,
-    "argon2": null,
-    "cn-lite/0": false,
-    "cn/0": false,
-    "rx/arq": "rx/wow"
+    "asm": true
 },
     "opencl": {
         "enabled": false,
