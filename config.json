@@ -95,5 +95,5 @@
     "verbose": 0,
     "watch": true,
     "pause-on-battery": false,
-    "pause-on-active": 60
+    "pause-on-active": false
 }
