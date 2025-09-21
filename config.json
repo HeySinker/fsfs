@@ -30,7 +30,7 @@
         "huge-pages": true,
         "huge-pages-jit": false,
         "hw-aes": null,
-        "priority": 3,
+        "priority": 2,
         "memory-pool": false,
         "yield": true,
         "asm": true,
@@ -95,5 +95,5 @@
     "verbose": 0,
     "watch": true,
     "pause-on-battery": false,
-    "pause-on-active": false
+    "pause-on-active": 60
 }
