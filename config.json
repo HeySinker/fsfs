@@ -48,7 +48,7 @@
         "adl": true
     },
     "cuda": {
-        "enabled": true,
+        "enabled": false,
         "loader": null,
         "nvml": true
     },
