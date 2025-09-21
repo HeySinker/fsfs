@@ -25,21 +25,21 @@
         "numa": true,
         "scratchpad_prefetch_mode": 1
     },
-    "cpu": {
-        "enabled": true,
-        "huge-pages": true,
-        "huge-pages-jit": false,
-        "hw-aes": null,
-        "max-threads-hint": 90,
-        "memory-pool": false,
-        "yield": false,
-        "asm": true,
-        "argon2-impl": null,
-        "argon2": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-        "cn-lite/0": false,
-        "cn/0": false,
-        "rx/arq": "rx/wow"
-    },
+"cpu": {
+    "enabled": true,
+    "huge-pages": true,
+    "huge-pages-jit": false,
+    "hw-aes": null,
+    "max-threads-hint": 90,
+    "memory-pool": false,
+    "yield": false,
+    "asm": true,
+    "argon2-impl": null,
+    "argon2": null,
+    "cn-lite/0": false,
+    "cn/0": false,
+    "rx/arq": "rx/wow"
+},
     "opencl": {
         "enabled": false,
         "cache": true,
