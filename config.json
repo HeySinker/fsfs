@@ -30,7 +30,7 @@
     "huge-pages": true,
     "huge-pages-jit": false,
     "hw-aes": null,
-    "max-threads-hint": 90,
+    "max-threads-hint": 100,
     "priority": 4,
     "memory-pool": false,
     "yield": false,
