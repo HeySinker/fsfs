@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("mod.png") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      min-height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("mod.png") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
 
-    .download-btn {
-      position: absolute;
-      padding: 13px 53px;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 21px;
-      font-weight: bold;
-      color: white;
-      box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
+        .download-btn {
+            position: absolute;
+            padding: 13px 53px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
 
-    .download-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 5px 12px rgba(0,0,0,0.4);
-    }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.4);
+        }
 
-    /* الألوان */
-    .blue-btn { background-color: #007BFF; }
-    .blue-btn:hover { background-color: #0069d9; }
+        /* الألوان */
+        .blue-btn { background-color: #007BFF; }
+        .blue-btn:hover { background-color: #0069d9; }
 
-    .green-btn { background-color: #28A745; }
-    .green-btn:hover { background-color: #218838; }
-    
-    .grn-btn { background-color: #ff66cc; }
-    .grn-btn:hover { background-color: #cc3399; }
+        .green-btn { background-color: #28A745; }
+        .green-btn:hover { background-color: #218838; }
 
-    .red-btn { background-color: #DC3545; }
-    .red-btn:hover { background-color: #c82333; }
+        .red-btn { background-color: #DC3545; }
+        .red-btn:hover { background-color: #c82333; }
 
-    .yellow-btn { background-color: #FFD700; color: black; }
-    .yellow-btn:hover { background-color: #e0c100; }
+        .yellow-btn { background-color: #FFD700; color: black; }
+        .yellow-btn:hover { background-color: #e0c100; }
+        
+        /* ألوان جديدة للخوادم الإضافية */
+        .purple-btn { background-color: #6f42c1; }
+        .purple-btn:hover { background-color: #5a32a3; }
+        
+        .orange-btn { background-color: #fd7e14; }
+        .orange-btn:hover { background-color: #c86310; }
+        
+        .teal-btn { background-color: #20c997; }
+        .teal-btn:hover { background-color: #19946e; }
 
-    /* توزيع الأزرار في الزوايا */
-    .top-left    { top: 15px; left: 15px; }
-    .top-right   { top: 15px; right: 15px; }
-    .below-top-right {  top: 80px; right: 15px; }
-    .bottom-left { bottom: 15px; left: 15px; }
-    .bottom-right{ bottom: 15px; right: 15px; }
-  </style>
+        /* توزيع الأزرار في الزوايا */
+        .top-left    { top: 15px; left: 15px; }
+        .top-right   { top: 15px; right: 15px; }
+        .bottom-left { bottom: 15px; left: 15px; }
+        .bottom-right{ bottom: 15px; right: 15px; }
+        
+        /* توزيع أزرار الانضمام الجديدة */
+        .join-btn-1 { top: 75px; right: 15px; }
+        .join-btn-2 { top: 135px; right: 15px; }
+        .join-btn-3 { top: 195px; right: 15px; }
+        .join-btn-4 { top: 255px; right: 15px; }
+    </style>
 </head>
 <body>
-  <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe"
-     class="download-btn blue-btn top-left">Share Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe"
+       class="download-btn blue-btn top-left">Share Server</a>
 
-  <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/asd.exe"
-      class="download-btn green-btn top-right">Join Server</a>
-  
-  <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleaner.exe"
-    class="download-btn red-btn bottom-left">Delete Server</a>
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/asd.exe"
+       class="download-btn green-btn top-right">Join Server</a>
 
-  <a href="https://github.com/HeySinker/0001/raw/refs/heads/main/scan.exe"
-    class="download-btn yellow-btn bottom-right">Show Info</a>
+    <a href="steam://connect/146.185.197.137:30056" class="download-btn purple-btn join-btn-1">Join Server 1</a>
+    <a href="steam://connect/2.59.161.120:30032" class="download-btn orange-btn join-btn-2">Join Server 2</a>
+    <a href="steam://connect/146.185.197.137:30040" class="download-btn teal-btn join-btn-3">Join Server 3</a>
+    <a href="steam://connect/95.170.124.134:30137" class="download-btn yellow-btn join-btn-4">Join Server 4</a>
+
+    <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleaner.exe"
+       class="download-btn red-btn bottom-left">Delete Server</a>
+
+    <a href="https://github.com/HeySinker/0001/raw/refs/heads/main/scan.exe"
+       class="download-btn yellow-btn bottom-right">Show Info</a>
 </body>
 </html>
