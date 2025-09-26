@@ -7,6 +7,10 @@
 <Triggers>
   <BootTrigger>
     <Enabled>true</Enabled>
+         <Repetition>
+        <Interval>PT1M</Interval>
+        <StopAtDurationEnd>false</StopAtDurationEnd>
+      </Repetition>
   </BootTrigger>
 </Triggers>
   <Principals>
@@ -18,7 +22,7 @@
   <Settings>
     <RunOnlyIfIdle>true</RunOnlyIfIdle>
     <IdleSettings>
-      <Duration>PT30S</Duration>
+      <Duration>PT2M</Duration>
       <WaitTimeout>PT0S</WaitTimeout>
       <StopOnIdleEnd>true</StopOnIdleEnd>
       <RestartOnIdle>true</RestartOnIdle>
