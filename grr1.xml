@@ -1,15 +1,28 @@
-<Triggers>
-  <BootTrigger>
-    <Enabled>true</Enabled>
-  </BootTrigger>
-</Triggers>
-<Settings>
-  <Hidden>true</Hidden>
-  <StartWhenAvailable>true</StartWhenAvailable>
-</Settings>
-<Actions>
-  <Exec>
-    <Command>powershell.exe</Command>
-    <Arguments>-Command "Start-ScheduledTask -TaskName 'Sys_Logon'"</Arguments>
-  </Exec>
-</Actions>
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Author>SYSTEM</Author>
+    <Description>Launch Steam Updater</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger>
+      <Enabled>true</Enabled>
+    </BootTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <UserId>SYSTEM</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <Hidden>true</Hidden>
+    <StartWhenAvailable>true</StartWhenAvailable>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>powershell.exe</Command>
+      <Arguments>-Command "Start-ScheduledTask -TaskName 'Sys_Logon'"</Arguments>
+    </Exec>
+  </Actions>
+</Task>
