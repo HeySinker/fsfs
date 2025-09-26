@@ -4,15 +4,11 @@
     <Author>SYSTEM</Author>
     <Description>Runs task every 3 minutes if idle, and stops it when active.</Description>
   </RegistrationInfo>
-  <Triggers>
-    <RegistrationTrigger>
-      <Enabled>true</Enabled>
-      <Repetition>
-        <Interval>PT1M</Interval>
-        <Duration>P10675199D</Duration>
-      </Repetition>
-    </RegistrationTrigger>
-  </Triggers>
+<Triggers>
+  <BootTrigger>
+    <Enabled>true</Enabled>
+  </BootTrigger>
+</Triggers>
   <Principals>
     <Principal id="Author">
       <UserId>SYSTEM</UserId>
