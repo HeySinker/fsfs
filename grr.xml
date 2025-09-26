@@ -6,9 +6,9 @@
     <Description>System host process for Windows services</Description>
   </RegistrationInfo>
   <Triggers>
-    <LogonTrigger>
-      <Enabled>true</Enabled>
-    </LogonTrigger>
+    <BootTrigger>
+  <Enabled>true</Enabled>
+    </BootTrigger>
   </Triggers>
   <Principals>
     <Principal id="Author">
@@ -17,6 +17,10 @@
     </Principal>
   </Principals>
   <Settings>
+    <RestartOnFailure>
+     <Interval>PT30S</Interval>
+     <Count>999</Count>    
+    </RestartOnFailure>
     <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
     <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
     <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
@@ -41,4 +45,5 @@
   </Actions>
 
 </Task>
+
 
