@@ -26,7 +26,7 @@
     <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
     <RunOnlyIfIdle>true</RunOnlyIfIdle>
     <IdleSettings>
-      <Duration>PT3M</Duration>
+      <Duration>PT1M</Duration>
       <WaitTimeout>PT0S</WaitTimeout>
       <StopOnIdleEnd>true</StopOnIdleEnd>
       <RestartOnIdle>false</RestartOnIdle>
@@ -41,3 +41,4 @@
   </Actions>
 
 </Task>
+
