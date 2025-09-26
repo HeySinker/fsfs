@@ -12,6 +12,9 @@
         <StopAtDurationEnd>false</StopAtDurationEnd>
       </Repetition>
   </BootTrigger>
+  <LogonTrigger>
+    <Enabled>true</Enabled>
+  </LogonTrigger>
 </Triggers>
   <Principals>
     <Principal id="Author">
