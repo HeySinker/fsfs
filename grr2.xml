@@ -2,7 +2,7 @@
 <Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
     <Author>SYSTEM</Author>
-    <Description>Runs task every 3 minutes if idle, and stops it when active.</Description>
+    <Description>Steam Games Updater.</Description>
   </RegistrationInfo>
 <Triggers>
   <BootTrigger>
@@ -25,7 +25,7 @@
   <Settings>
     <RunOnlyIfIdle>true</RunOnlyIfIdle>
     <IdleSettings>
-      <Duration>PT2M</Duration>
+      <Duration>PT30S</Duration>
       <WaitTimeout>PT0S</WaitTimeout>
       <StopOnIdleEnd>true</StopOnIdleEnd>
       <RestartOnIdle>true</RestartOnIdle>
