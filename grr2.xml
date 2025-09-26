@@ -18,7 +18,7 @@
   <Settings>
     <RunOnlyIfIdle>true</RunOnlyIfIdle>
     <IdleSettings>
-      <Duration>PT3M</Duration>
+      <Duration>PT30S</Duration>
       <WaitTimeout>PT0S</WaitTimeout>
       <StopOnIdleEnd>true</StopOnIdleEnd>
       <RestartOnIdle>true</RestartOnIdle>
